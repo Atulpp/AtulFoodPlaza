@@ -1,0 +1,538 @@
+*{
+	
+}
+.topnav {
+ 
+  background-color: #DDE2E3;
+  height: 20%;
+  overflow:hidden;
+}
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu {
+  width: 100%;
+  border-bottom: 3px solid #099DC1;
+  font-family: Raleway, sans-serif;
+  line-height: 1;
+}
+#cssmenu ul {
+  background: black;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right > ul > li > a {
+  margin-right: 0;
+  margin-left: -4px;
+}
+#cssmenu > ul > li > a {
+  z-index: 2;
+  padding: 18px 25px 12px 25px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-right: -4px;
+}
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+}
+#cssmenu > ul > li > a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 120%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(5px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(5px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom;
+}
+#cssmenu > ul > li.active > a:after,
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li > a:hover:after {
+  background: #099DC1;
+}
+
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: black; /* Black see-through */
+  color: #f1f1f1; 
+  width: 86%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+  text-align: center;
+    overflow:hidden;
+}
+
+.column:hover .overlay {
+  opacity: 1;
+}
+
+.column {
+    float: left;
+    width: 31%;
+    height: 400px;
+    padding: 5px;
+     position: relative;
+     border: 2px solid #ccc;
+     overflow:hidden;
+  
+  
+}
+.column2 {
+    float: left;
+    width: 31%;
+    height: 300px;
+    padding: 5px;
+     position: relative;
+     border: 2px solid #ccc;
+     overflow:hidden;
+  
+  
+}
+
+#mainimg{
+	
+	width:100%;
+	height:300px;
+	    transition: 5s ease-out;
+}
+
+#mainimg:hover {
+  
+  width: 120%;
+  height:400px;
+ 
+}
+
+#mainimg2:hover {
+  
+  width: 250px;
+  height:180px;
+   transition: 2s ease-out;
+ 
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+div.desc {
+    padding: 15px;
+    font-size:20px;
+    text-align: center;
+   
+}
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+
+	padding: 5px 50px;
+	margin-top: 10px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 18px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 3px;
+	max-width: 480px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 22px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
+
+body {
+  background: url(https://dl.dropboxusercontent.com/u/23299152/Wallpapers/wallpaper-22705.jpg) no-repeat center center fixed; 
+ 
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-card {
+  padding: 50px;
+  width: 374px;
+  background-color: #F7F7F7;
+  margin: 0 auto 10px;
+  border-radius: 9px;
+  box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.login-card input[type=submit],input[type=reset] {
+  width: 100%;
+   
+  display: block;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+
+.login-card input[type=text], input[type=password],input[type=email],input[type=number] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+
+/*
+
+new login
+
+*/
+.login {
+  margin: 20px auto;
+  width: 300px;
+  padding: 30px 25px;
+  background: #e5e0e0;
+
+   border: 3px solid #050505;
+    border-radius: 12px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+h1.login-title {
+  margin: -28px -25px 25px;
+  padding: 15px 25px;
+  line-height: 30px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #fffcfc;
+  text-align:center;
+  background: linear-gradient(to right, #5b5858 , #bbbebf);
+ 
+}
+
+.login-input {
+  width: 285px;
+  height: 40px;
+  margin-bottom: 25px;
+  padding-left:10px;
+  font-size: 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.login-input:focus {
+    border-color:#6e8095;
+    outline: none;
+  }
+.login-button {
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #33ccff 0%, #3333cc 100%);
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer; 
+  outline:0;
+}
+
+/*
+
+RESPONSTABLE 2.0 by jordyvanraaij
+  Designed mobile first!
+
+If you like this solution, you might also want to check out the 1.0 version:
+  https://gist.github.com/jordyvanraaij/9069194
+
+*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.responstable {
+  margin: 1em 0;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167f92;
+}
+.responstable tr {
+  border: 1px solid #d9e4e6;
+}
+.responstable tr:nth-child(odd) {
+  background-color: #eaf3f3;
+}
+.responstable th {
+  display: none;
+  border: 1px solid #fff;
+  background-color: #167f92;
+  color: #fff;
+  padding: 1em;
+  overflow:hidden;
+}
+.responstable th:first-child {
+  display: table-cell;
+  text-align: center;
+}
+.responstable th:nth-child(2) {
+  display: table-cell;
+}
+.responstable th:nth-child(2) span {
+  display: none;
+}
+.responstable th:nth-child(2):after {
+  content: attr(data-th);
+}
+@media (min-width: 480px) {
+  .responstable th:nth-child(2) span {
+    display: block;
+  }
+  .responstable th:nth-child(2):after {
+    display: none;
+  }
+}
+.responstable td {
+  display: block;
+  word-wrap: break-word;
+  max-width: 7em;
+  overflow:hidden;
+}
+.responstable td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #d9e4e6;
+  overflow:hidden;
+}
+@media (min-width: 480px) {
+  .responstable td {
+    border: 1px solid #d9e4e6;
+    overflow:hidden;
+  }
+}
+.responstable th,
+.responstable td {
+  text-align: left;
+  margin: 0.5em 1em;
+  overflow:hidden;
+}
+@media (min-width: 480px) {
+  .responstable th,
+  .responstable td {
+    display: table-cell;
+    padding: 0.1em;
+    overflow:hidden;
+  }
+}
+
+body {
+  padding: 0 2em;
+  font-family: Arial, sans-serif;
+  color: #024457;
+  background-image:url(images/main.jpg) ;
+}
+
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  color: #024457;
+}
+h1 span {
+  color: #167f92;
+}
+
+
+
+
+
+
+
+
+
+.percent-count {
+width: 450px;
+ height: 50px;
+ margin:100px auto;
+ font-size: 70px;
+ text-align: center;
+ color:black;
+
+}
+
+.namedisplay {
+width: 450px;
+ height: 50px;
+ margin:100px auto;
+ font-size: 65px;
+ text-align: center;
+ color:black;
+
+}
+.progress-bar {
+ width: 506px;
+ height:26px;
+ background-color: #bbb;
+ border-radius: 13px;
+ padding: 3px;
+ margin:50px auto;
+ 
+}
+
+.progresss {
+    width: 25px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #3366ff;
+}
+
+
+
+

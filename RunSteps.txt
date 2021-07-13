@@ -1,0 +1,20 @@
+Project --> Properties => targeted runtime--> select tomcat 7
+
+Buildpath-->module path --> add Mysql.jar
+
+//
+
+Right click your project folder and open up Properties.
+
+From the right panel, select Java Build Path then go to Libraries tab.
+
+Select Add External JARs to import the mysql driver.
+
+From the right panel, select Deployment Assembly.
+
+Select Add..., then select Java Build Path Entries and click Next.
+
+You should see the sql driver on the list. Select it and click first.
+
+//
+Online Food Ordering Website. Sep 2018 – Dec 2018 Project descriptionLanguages Used:-Java,JSP,Servlet,HTML,JavaScript,CSS. Database:-MySQL. Developed an online food ordering webite using JSP and Servlet.
